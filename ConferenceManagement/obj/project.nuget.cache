@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "dgSpecHash": "lnlL0INnVY4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\didou\\Documents\\Docker - VS 2-26\\GitHub\\Conference-Management-dotnet10\\ConferenceManagement\\ConferenceManagement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.0-rc.2.23480.1\\microsoft.data.sqlite.core.8.0.0-rc.2.23480.1.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0-rc.2.23480.1\\microsoft.entityframeworkcore.8.0.0-rc.2.23480.1.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0-rc.2.23480.1\\microsoft.entityframeworkcore.abstractions.8.0.0-rc.2.23480.1.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0-rc.2.23480.1\\microsoft.entityframeworkcore.analyzers.8.0.0-rc.2.23480.1.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0-rc.2.23480.1\\microsoft.entityframeworkcore.relational.8.0.0-rc.2.23480.1.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\8.0.0-rc.2.23480.1\\microsoft.entityframeworkcore.sqlite.8.0.0-rc.2.23480.1.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\8.0.0-rc.2.23480.1\\microsoft.entityframeworkcore.sqlite.core.8.0.0-rc.2.23480.1.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.0-rc.2.23479.6\\microsoft.extensions.dependencymodel.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\didou\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "ConferenceManagement depends on Microsoft.EntityFrameworkCore (>= 8.0.0-rc.2) but Microsoft.EntityFrameworkCore 8.0.0-rc.2 was not found. Microsoft.EntityFrameworkCore 8.0.0-rc.2.23480.1 was resolved instead.",
+      "projectPath": "C:\\Users\\didou\\Documents\\Docker - VS 2-26\\GitHub\\Conference-Management-dotnet10\\ConferenceManagement\\ConferenceManagement.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\didou\\Documents\\Docker - VS 2-26\\GitHub\\Conference-Management-dotnet10\\ConferenceManagement\\ConferenceManagement.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "ConferenceManagement depends on Microsoft.EntityFrameworkCore.Sqlite (>= 8.0.0-rc.2) but Microsoft.EntityFrameworkCore.Sqlite 8.0.0-rc.2 was not found. Microsoft.EntityFrameworkCore.Sqlite 8.0.0-rc.2.23480.1 was resolved instead.",
+      "projectPath": "C:\\Users\\didou\\Documents\\Docker - VS 2-26\\GitHub\\Conference-Management-dotnet10\\ConferenceManagement\\ConferenceManagement.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\didou\\Documents\\Docker - VS 2-26\\GitHub\\Conference-Management-dotnet10\\ConferenceManagement\\ConferenceManagement.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

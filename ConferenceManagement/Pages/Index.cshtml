@@ -4,22 +4,29 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="py-4">
-    @if (Model.Conference is null)
-    {
+@if (Model.Conference is null)
+{
+    <div class="py-4">
         <h2>No conference configured</h2>
         <p>Please ask an organizer to create the conference.</p>
-    }
-    else
-    {
-        <h1>@Model.Conference.Name</h1>
-        <p class="text-muted">@Model.Conference.Location — @Model.Conference.StartDate.ToShortDateString() - @Model.Conference.EndDate.ToShortDateString()</p>
-        <p>@Model.Conference.Description</p>
-
-        <div class="mt-4">
-            <a class="btn btn-primary me-2" asp-page="/Program/Index">View Program</a>
-            <a class="btn btn-outline-secondary me-2" asp-page="/Speakers/Index">Speakers</a>
-            <a class="btn btn-outline-success" asp-page="/Register/Index">Register</a>
+    </div>
+}
+else
+{
+    <header class="hero hero-image text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-bold">@Model.Conference.Name</h1>
+                    <p class="lead mb-2">@Model.Conference.Location — @Model.Conference.StartDate.ToShortDateString() - @Model.Conference.EndDate.ToShortDateString()</p>
+                    <p class="mb-4">@Model.Conference.Description</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-primary btn-lg" asp-page="/Program/Index">View Program</a>
+                        <a class="btn btn-outline-light btn-lg" asp-page="/Speakers/Index">Speakers</a>
+                        <a class="btn btn-outline-light btn-lg" asp-page="/Register/Index">Register</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    }
-</div>
+    </header>
+}

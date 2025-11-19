@@ -1,12 +1,3 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace ConferenceManagement.Pages;
-
-public class PrivacyModel : PageModel
-{
-    public void OnGet()
-    {
-    }
-}
+﻿// Privacy page removed per project request.
+// File left intentionally blank to avoid compile-time model references.
 
