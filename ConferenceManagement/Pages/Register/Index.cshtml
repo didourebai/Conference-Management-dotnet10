@@ -1,0 +1,31 @@
+@page
+@model ConferenceManagement.Pages.Register.IndexModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Participant.FirstName" class="form-label">First name</label>
+        <input asp-for="Participant.FirstName" class="form-control" />
+        <span asp-validation-for="Participant.FirstName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Participant.LastName" class="form-label">Last name</label>
+        <input asp-for="Participant.LastName" class="form-control" />
+        <span asp-validation-for="Participant.LastName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Participant.Email" class="form-label">Email</label>
+        <input asp-for="Participant.Email" class="form-control" />
+        <span asp-validation-for="Participant.Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

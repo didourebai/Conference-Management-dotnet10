@@ -1,0 +1,27 @@
+@page
+@model ConferenceManagement.Pages.Speakers.IndexModel
+@{
+    ViewData["Title"] = "Speakers";
+}
+
+<h2>Speakers</h2>
+
+@if (!Model.Speakers.Any())
+{
+    <p>No speakers have been added yet.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var sp in Model.Speakers)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <a asp-page="/Speakers/Details" asp-route-id="@sp.Id">@sp.FirstName @sp.LastName</a>
+                    <div class="small text-muted">@sp.Organization</div>
+                </div>
+                <div class="small">@sp.Email</div>
+            </li>
+        }
+    </ul>
+}

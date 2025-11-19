@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="py-4">
+    @if (Model.Conference is null)
+    {
+        <h2>No conference configured</h2>
+        <p>Please ask an organizer to create the conference.</p>
+    }
+    else
+    {
+        <h1>@Model.Conference.Name</h1>
+        <p class="text-muted">@Model.Conference.Location — @Model.Conference.StartDate.ToShortDateString() - @Model.Conference.EndDate.ToShortDateString()</p>
+        <p>@Model.Conference.Description</p>
+
+        <div class="mt-4">
+            <a class="btn btn-primary me-2" asp-page="/Program/Index">View Program</a>
+            <a class="btn btn-outline-secondary me-2" asp-page="/Speakers/Index">Speakers</a>
+            <a class="btn btn-outline-success" asp-page="/Register/Index">Register</a>
+        </div>
+    }
+</div>

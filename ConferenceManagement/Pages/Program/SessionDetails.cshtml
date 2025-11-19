@@ -1,0 +1,22 @@
+@page
+@model ConferenceManagement.Pages.Program.SessionDetailsModel
+@{
+    ViewData["Title"] = Model.Session?.Title ?? "Session details";
+}
+
+@if (Model.Session == null)
+{
+    <div class="alert alert-warning">Session not found.</div>
+}
+else
+{
+    <h2>@Model.Session.Title</h2>
+    <div class="text-muted">@Model.Session.StartTime?.ToLocalTime().ToString("f") - @Model.Session.EndTime?.ToLocalTime().ToString("t")</div>
+    <p class="mt-3">@Model.Session.Abstract</p>
+
+    <h5>Speaker</h5>
+    <p>@Model.Session.Speaker?.FirstName @Model.Session.Speaker?.LastName<br />@Model.Session.Speaker?.Organization</p>
+
+    <h5>Room</h5>
+    <p>@Model.Session.Room?.Name</p>
+}
